@@ -49,6 +49,7 @@ func downloadPlugin(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{"success": true, "filename": filename})
 }
 
+//
 // Download file from URL
 func DownloadFile(filepath string, url string, filename string) (string, error) {
 	// Get the data
